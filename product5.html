@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .psize:hover{
+               background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">WEBSHOP</div>
+        <ul>
+            <li><a href="index.html" ><b>Home</b></a></li>
+            <li><a href="products.html"><b>Buy Products</b></a></li>
+            <li><a href="addcart.html"><b>Product added in Cart</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+            <li><a href="Contact.html"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="images/Ipnp1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="images/Ipng1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="images/Ipng2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="images/Ipng3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="images/Ipng4.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product >Phone</div>
+            <div class="pname">Iphone 15 Pro Max</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <div class="price">$1254</div>
+            <div class="size">
+                <p>Color :</p>
+                <div class="psize active">Blue</div>
+                <div class="psize">Black</div>
+                <div class="psize">White</div>
+                <div class="psize">Red</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>

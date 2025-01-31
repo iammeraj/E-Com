@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSHOP Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f1f1f1; 
+            background-image: url('your-background-image-url.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333; 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555; 
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #3498db; 
+            color: #fff; 
+            
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2c3e50; 
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 16px;
+            color: #333; 
+        }
+
+        .register-link a {
+            color: #3498db; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+        body{
+            background-image:url("images/ecom.jpg");
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>LOGIN TO WEBSHOP</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <button type="submit"><a href="index.html">Login</a></button>
+    </form>
+
+    <div class="register-link">
+        <p>Don't have an account? <a href="#">Register here</a></p>
+    </div>
+</div>
+
+</body>
+</html>

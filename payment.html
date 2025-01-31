@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image:url("images/addtobg.webp");
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="index.html" target="_blank">Go Back to Home</a></li>
+            <li><a href="products.html" target="_blank">Go Back to Product Section</a></li>
+        </ul></nav>
+    <header>
+        <h1>Secure Payment</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="date" id="expiryDate" name="expiryDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+
+            <label for="cardHolderName">Cardholder Name:</label>
+            <input type="text" id="cardHolderName" name="cardHolderName" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="usa">India</option>
+                <option value="canada">United States</option>
+                <option value="uk">United Kingdom</option>
+                
+            </select>
+            
+            <input type="submit" value="Submit Payment">
+        </form>
+    </main>
+</body>
+</html>
